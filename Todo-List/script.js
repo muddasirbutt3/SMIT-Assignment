@@ -27,3 +27,8 @@ function editItem(e){
     }
     e.parentNode.parentNode.firstChild.textContent = newInput
 }
+function keyPress(e){
+    if (e.key == 'Enter') {
+        Add()
+    }
+}
