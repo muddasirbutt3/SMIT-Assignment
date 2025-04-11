@@ -25,7 +25,7 @@
 <body class="container m-3">
     <h2>Todo List</h2>
     <br>
-    <input type="text" id="input" class="form-control">
+    <input type="text" onkeypress="keyPress(event)" id="input" class="form-control">
     <br>
     <button class="btn btn-info" onclick="Add()">Add</button>
     <button class="btn btn-danger" onclick="clrAll()">Delete All</button>
