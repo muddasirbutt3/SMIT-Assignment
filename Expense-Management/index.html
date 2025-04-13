@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Management</title>
+  </head>
+  <body>
+    <div class="main">
+      <h2 id="hing">Expense Tracker</h2>
+      <div class="form">
+        <h2>Enter Expense</h2>
+        <input type="text" id="name" placeholder="Enter Title of Product" />
+        <input type="number" id="price" placeholder="Enter Cost of Product" />
+        <button onclick="addExpense()" class="btn1">Add</button>
+        <button onclick="clrAll()" class="btn2">Delete All</button>
+      </div>
+      <div class="total">
+        <p>Total Expenses for Today</p>
+        <span id="total">$0</span>
+      </div>
+      <div id="expense"><h4>Expenses</h4></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
