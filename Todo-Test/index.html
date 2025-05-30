@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h2>Todo List</h2>
+        <div class="search">
+            <input type="text" placeholder="Search Todos" id="search">
+        </div>
+        <div class="lists" id="list">
+            <!-- <div class="item">
+                <div class="text">can i get</div>
+                <button class="remove" onclick="Remove(this)">X</button>
+            </div>
+            <div class="item">
+                <div class="text">can i get??</div>
+                <button class="remove" onclick="Remove(this)">X</button>
+            </div> -->
+            
+        </div>
+        <div class="from">
+            <h2>Add a new Todo</h2>
+            <input type="text" placeholder="Add Todo" id="input" onkeyup="if(event.keyCode === 13) Add()">
+            <button onclick="Add()">Sumbit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

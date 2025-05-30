@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#103194;
+    border-radius: 0px;
+}
+
+.main{
+    width: 500px;
+    text-align: center;
+    color: white;
+}
+.main h2{
+    font-weight: 400;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.search{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+}
+.remove{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    background-color: #10266d;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+    color: white;
+}
+.search input::placeholder{
+    color: #607bcc;
+}
+.lists{
+    width: 100%;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px 0px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    scroll-snap-type:none ;
+}
+.item{
+    width: 100%;
+    min-height: 50px;
+    background-color: #173ec0;
+    padding: 0px 12px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+.item .text{
+    max-width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.from{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+.from h2{
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+.from input{
+    width: 100%;
+    height: 45px;
+    background-color:#10266d;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 16px;
+}
+.from input::placeholder{
+    color:#607bcc;
+}
+.from button{
+    padding: 8px 12px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #10266d;
+    border: 3px solid white;
+    transition: all .5s;
+}
+.from button:hover{
+    border: 3px solid white;
+    transform: scale(1.07);
+    background-color: transparent;
+    color: white;
+}
