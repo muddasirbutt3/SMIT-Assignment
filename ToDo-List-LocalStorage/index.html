@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #a6a6a6;
+      }
+      .main {
+        width: 400px;
+        padding: 20px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        position: relative;
+      }
+      .main input {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        outline: none;
+        background-color: #a6a6a6;
+      }
+      .btns {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+      #add,
+      #clrAll {
+        font-size: 16px;
+        padding: 6px 8px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        background-color: #c0c0c0;
+      }
+      #text {
+        width: 69%;
+        padding: 10px 12px;
+        overflow: auto;
+        border-radius: 5px;
+        align-content: center;
+        display: inline-block;
+        color: white;
+      }
+      #box {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        margin-top: 10px;
+        position: relative;
+        background-color: #a6a6a6;
+      }
+      #remove {
+        padding: 6px 8px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      p {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: #a6a6a6;
+        align-content: center;
+        color: white;
+        font-size: 18px;
+      }
+      #boxes {
+        width: 100%;
+        max-height: 350px;
+        overflow: auto;
+      }
+
+      #boxes {
+        scrollbar-width: none;
+      }
+
+
+      .btns2 {
+        width: 31%;
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+      }
+      h1{
+        margin-bottom: 20px;
+      }
+      .mark{
+        position: absolute;
+        right:0px;
+        top: -20px;
+        font-size: 14px;
+      }
+    </style>
+    <title>ToDo-List</title>
+  </head>
+  <body>
+    <div class="main">
+        <h1>ToDo List</h1>
+      <input
+        type="text"
+        id="input"
+        placeholder="Enter a task"
+        onkeyup="if(event.key === 'Enter') AddTask()"
+      />
+      <br />
+      <div class="btns">
+        <button id="add" onclick="AddTask()">Add</button>
+        <button id="clrAll" onclick="ClrAll()">Remove All</button>
+      </div>
+      <div id="boxes">
+        <!-- <div id="box">
+          <div id="text">${task}</div>
+          <div class="btns2">
+            <button onclick="RemoveTask(this)" id="remove">Remove</button>
+            <button onclick="EditTask(this)" id="remove">Edit</button>
+          </div>
+        </div> -->
+      </div>
+      <div class="mark">Muddasir❤️</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
